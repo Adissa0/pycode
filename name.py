@@ -1,8 +1,13 @@
 
+def main():
+      x = int(input("Enter? "))
+      if is_even(x):
+            print("Even")
+      else:
+            print("Odd")
 
-import sys
+def is_even(n):
+      return n % 2 == 0
 
-name = sys.platform
-print(name)
-print(sys.version)
+main()
 
