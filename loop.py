@@ -26,12 +26,17 @@ def taille(name):
 def info(name, age, taille):
       print(name + ": Vous avez {} ans et l'an prochain vous aurez {} ans".format(age, age+1))
       print()
-for i in range(1, 4):
-      print(i, end=" ")
-      name0 = name()
-      age0 = age(name0)
-      taille0 = taille(name0)
-      info(name0, age0, taille0)
+
+def main():
+      for i in range(1, 4):
+            print(i, end=" ")
+            name0 = name()
+            age0 = age(name0)
+            taille0 = taille(name0)
+            info(name0, age0, taille0)
+
+main()
+
 
 
       
