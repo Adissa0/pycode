@@ -1,13 +1,17 @@
-
 def main():
-      x = int(input("Enter? "))
-      if is_even(x):
-            print("Even")
-      else:
-            print("Odd")
+      number = get_number()
+      mean(number)
+      
 
-def is_even(n):
-      return n % 2 == 0
+def get_number():
+      while True:
+            n = int(input("What is n? "))
+            if n > 0:
+                  return n
 
+      
+def mean(n):
+      for _ in range(n):
+            print("mean")
+            
 main()
-

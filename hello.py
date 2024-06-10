@@ -1,11 +1,15 @@
 
-# emoji
+
+
+# cinetic energy
+# E = m*c**2
 def main():
-      name = input("")
-      print("Tis is CS50 " + emoji())
+      m = int(input("m: "))
+      print("E: ", energy(m))
       
-def emoji():
-      return 
+
+def energy(mass, c=300000000):
+      return mass*c**2
 
 main()
 

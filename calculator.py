@@ -1,14 +1,15 @@
 
-# code
-# calculator
-# calculate a+b
-def sum():
-      a = b = ""
-      while not (a.isdigit() and b.isdigit()):
-            a = input("0. Entrez? ")
-            b = input("1. Entrez? ")
-      print(f"La somme de {a}+{b} est {int(a) + int(b)}")
+def main():
+      while not (n1.isdigit() and n2.isdigit()):
+            a = input("What is a? ")
+            b = input("What is b? ")
+      print(f"{a} + {b} equal {sum(a, b)}")
+      
 
-sum()
+def sum(n1, n2):
+      return int(n1)+int(n2)
 
+
+main()
+ 
 
