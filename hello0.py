@@ -1,6 +1,6 @@
 def main():
       for i in range(2):
-            print(i, end=" ")
+            print(i, end=". ")
             name0 = name()
             age0 = age(name0)
             taille0 = taille(name0)
