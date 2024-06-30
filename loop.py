@@ -1,16 +1,16 @@
-# variables
-mails = ["bouraima", "antif"]
-username = ""
-# conversion to username & verification
-while username not in mails:
-      mail = input("What's your mail? ").split('@')
-      try:
-            username = [i[0:-1] for i in mail if i.isalnum()]
-      except IndexError as err:
-            print(err, "Error found !!!")
-            continue
-      else:
-            if username[0] not in mails:
-                  print(username)
-                  continue
-            
+# request for username: bank account
+
+mails = ["bou", "antif"]
+while True:
+     mail = input("What's your email? ").strip().split('@')
+     if mail == []:
+          continue
+     else:
+          get_usn = [i[0:-1] for i in mail if i.isalnum()]
+          usn = get_usn[0]
+          if usn in mails:
+               print("Good")
+               break
+               
+     
+     
